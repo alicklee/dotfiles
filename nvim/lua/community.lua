@@ -19,5 +19,6 @@ return {
   -- flash
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.motion.mini-move" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
   -- import/override with your plugins folder
 }

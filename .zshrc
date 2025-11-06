@@ -130,18 +130,19 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias work="cd ~/workspace/"
+alias work="cd ~/Workspace/"
 alias nv="nvim"
 alias nve="nvim ~/.config/nvim/"
 alias cnv="cd ~/.config/nvim/"
 alias zs="nvim ~/.zshrc"
-alias cr="screen -dmS clash bash -c '~/soft/Clash/cfw'"
-alias cs="pkill -f cfw && screen -S clash -X quit"
 alias kc="cd ~/.config/kitty/"
+alias pi="sudo pacman -S"
+alias ff="fastfetch"
 
-export http_proxy=127.0.0.1:7890
-export https_proxy=127.0.0.1:7890
-export socket_proxy=127.0.0.1:7890
+#export http_proxy=127.0.0.1:7892
+#export https_proxy=127.0.0.1:7892
+#export socket_proxy=127.0.0.1:7891
+export DEEPSEEK_API_KEY="sk-1410d08d3ac848bdbe74b76bd3faccf4"
 
 
 export NVM_DIR="$HOME/.nvm"
@@ -150,3 +151,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+eval $(thefuck --alias)
